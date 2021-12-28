@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background: #c3cfe2;
+}
+
+.card-container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto 450px auto;
+    grid-template-rows: auto 400px 225px auto;
+    grid-template-areas: 
+    ". . ."
+    ". ct ."
+    ". cb ."
+    ". . .";
+
+}
+
+.card-top{
+    grid-area: ct;
+    background: #fff;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.35em;
+    line-height: 1.9em;
+    color: rgb(78, 76, 76);
+    margin-top: 30px;
+    padding: 40px;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    box-shadow: 5px 5px 15px;
+}
+
+.card-bottom{
+    grid-area: cb;
+    background: #686de0;
+    font-family: 'Assistant', sans-serif;
+    letter-spacing: 0.2em;
+    text-align: center;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+    box-shadow: 5px 5px 15px;
+    img{
+        transform: scale(0.4) translateY(-500px);
+        border-radius: 50%;
+        background: #fff;
+        padding: 15px;
+        margin: 10px;
+        
+    }
+    h2{
+        color: rgb(255, 255, 255);
+        transform: translateY(-320px);
+    }
+    h3{
+        color: rgba(255, 255, 255, 0.37);
+        transform: translateY(-330px);
+    }
+}
+
+.portfoliogrid{
+    height: 100vh;
+}
